@@ -10,9 +10,15 @@ public class Rectangle extends Shape {
     public Rectangle(int base, int height) {
         this.base = base;
         this.height = height;
+        this.name = "Rectangle";
+        this.sideCount = 4;
     }
 
-    public String getName() {
-        return "Rectangle";
+    public int getPerimeter(){
+        return base * 2 + height * 2;
+    }
+
+    public double getArea(){
+        return base * height;
     }
 }

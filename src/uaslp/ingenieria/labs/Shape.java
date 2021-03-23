@@ -2,22 +2,23 @@ package uaslp.ingenieria.labs;
 
 // No tiene sentido instanciar Shape
 
-public class Shape {
+public abstract class Shape {
+    protected String name;
+    protected int sideCount;
 
     public String getName() {
-        return "shape";
+        return name;
     }
 
-    // Tarea
     public int getSidesCount() {
+        return sideCount;
+    }
+
+    public int getPerimeter(){
         return 0;
     }
 
-    public int getPerimeter() {
-        return 0;
-    }
-
-    public double getArea() {
+    public double getArea(){
         return 0;
     }
 }

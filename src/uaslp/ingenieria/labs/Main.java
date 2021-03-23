@@ -2,6 +2,8 @@ package uaslp.ingenieria.labs;
 
 import uaslp.ingenieria.labs.shapes.*;
 import uaslp.ingenieria.labs.shapes.triangles.TriangleEquilatero;
+import uaslp.ingenieria.labs.shapes.triangles.IsoscelesTriangle;
+import uaslp.ingenieria.labs.shapes.triangles.IsoscelesTriangle;
 
 import java.util.LinkedList;
 
@@ -10,7 +12,6 @@ public class Main {
     public static void main(String[] args) {
         LinkedList<Shape> shapes = new LinkedList<>();
 
-        shapes.add(new Shape());
 
         shapes.add(new Circle(5));
         shapes.add(new Rectangle(8, 3));

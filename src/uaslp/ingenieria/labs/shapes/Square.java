@@ -7,13 +7,15 @@ public class Square extends Shape {
 
     public Square(int side) {
         this.side = side;
-    }
-
-    public String getName() {
-        return "Square";
+        this.name = "Square";
+        this.sideCount = 4;
     }
 
     public int getPerimeter() {
         return side * 4;
+    }
+
+    public double getArea(){
+        return Math.pow(side,2);
     }
 }

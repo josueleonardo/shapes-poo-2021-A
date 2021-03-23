@@ -2,11 +2,16 @@ package uaslp.ingenieria.labs.shapes;
 
 import uaslp.ingenieria.labs.Shape;
 
-public class Triangle extends Shape {
+public abstract class Triangle extends Shape {
+    protected int base;
+    protected int height;
 
+    public Triangle(){
+        this.sideCount = 3;
+    }
     // No puedo crear un triángulo sin definir de qué tipo es
 
-    public String getName() {
-        return "Triangle";
+    public double getArea(){
+        return base*height/2;
     }
 }
